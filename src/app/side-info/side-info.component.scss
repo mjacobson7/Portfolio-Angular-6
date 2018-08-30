@@ -1,0 +1,19 @@
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+
+    li {
+        margin-bottom: 15px;
+
+        img {
+            width: 16px;
+            height: 16px;
+            vertical-align: text-bottom;
+            margin-right: 10px;
+        }
+
+        span {
+            color: #434343;
+        }
+    }
+}

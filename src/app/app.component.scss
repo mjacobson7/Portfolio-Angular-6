@@ -1,0 +1,23 @@
+.sections-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer {
+    background: #32383e;
+    color: #FFF;
+    padding: 10px 0;
+
+    small {
+        line-height: 1.6;
+        color: #a1aab4;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1360px;
+        max-width: inherit;
+    }
+}

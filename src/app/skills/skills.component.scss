@@ -1,0 +1,49 @@
+.intro {
+    margin-bottom: 30px;
+}
+
+.level-title {
+    font-size: 16px;
+    position: relative;
+    margin-top: 0;
+
+    .level-label {
+        color: #ccd1d6;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Lato", arial, sans-serif;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        img {
+            width: 14px;
+            height: 14px;
+            margin-right: 3px;
+            position: relative;
+            top: -1px;
+        }
+    }
+}
+
+.level-bar {
+    height: 15px;
+    background: #e8e8e8;
+
+    .level-bar-inner {
+        background: #66cb8c;
+        height: 15px;
+    }
+
+    .workingKnowledge {
+        width: 90%;
+    }
+
+    .basicKnowledge {
+        width: 60%
+    }
+
+    .someExposure {
+        width: 30%;
+    }
+}

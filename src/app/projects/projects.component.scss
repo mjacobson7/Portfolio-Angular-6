@@ -1,0 +1,52 @@
+.projects {
+
+
+    .content {
+        .featured {
+            margin-bottom: 60px;
+
+            .title {
+                margin-bottom: 5px;
+                font-size: 20px !important;
+            }
+
+            .summary {
+                margin-bottom: 30px;
+                color: #778492;
+            }
+
+            .featured-image {
+                position: relative;
+                display: inline-block;
+
+                a {
+                    img {
+                        margin-bottom: 30px;
+                        border: 1px solid #CCC;
+                    }
+                }
+            }
+
+            .desc {
+                margin-bottom: 30px;
+            }
+        }
+        .divider {
+            margin-bottom: 60px;
+        }
+
+        .item {
+            .title {
+                font-size: 18px;
+                margin-top: 0;
+            }
+
+            a {
+                .project-image {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
