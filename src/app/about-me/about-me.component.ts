@@ -19,7 +19,7 @@ export class AboutMeComponent implements OnInit {
     const today = new Date();
     const diffTime = Math.abs(today.getTime() - experienceStarted.getTime());
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    return Math.floor(diffDays / 365);
+    return Math.round(diffDays / 365);
   }
 
 }

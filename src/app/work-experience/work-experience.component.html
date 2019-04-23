@@ -20,10 +20,10 @@
           <strong class="job-title">{{position.title}}</strong>
           <div class="timeline">
             <span *ngIf="position.endDate != null">
-              {{position.startDate | date: 'MMMM yyyy'}} - {{position.endDate | date: 'MMMM yyyy'}}
+              {{position.startDate | date: 'MMM yyyy'}} - {{position.endDate | date: 'MMM yyyy'}}
             </span>
             <span *ngIf="position.endDate == null">
-              {{position.startDate | date: 'MMMM yyyy'}} - Present
+              {{position.startDate | date: 'MMM yyyy'}} - Present
             </span>
             <span style="margin: 0 5px;">&#183;</span>
             <span>{{position.duration() }}</span>
