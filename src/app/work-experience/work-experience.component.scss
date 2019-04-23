@@ -20,3 +20,64 @@ p {
     margin-top: 0;
     margin-bottom: 1rem;
 }
+
+.job {
+    margin-left: 76px;
+    font-size: 14px;
+    display: flex;
+
+    .job-separator {
+        display: flex; 
+        flex-direction: column;
+        margin-top: 6px;
+
+        .dot {
+            position: relative;
+            left: -53px;
+            display: inline-block;
+            border: 2px solid #CFCFCF;
+            border-radius: 50%;
+            height: 9px;
+            width: 9px;
+            background-color: #CFCFCF;
+        }
+    
+        .line {
+            height: 100%;
+            width: 1px;
+            position: relative;
+            left: -49px;
+            background-color: #E9E9E9;
+            margin-top: 5px;
+        }
+    }
+
+    .location {
+        color: rgba(0,0,0,.6);
+    }
+
+    .job-duties {
+        list-style-type: square;
+        padding-left: 20px;
+    }
+}
+
+.company-details {
+    height: 56px;
+    display: flex;
+    align-items: center;
+
+    .company-logo {
+        height: 56px;
+        width: 56px;
+        padding: 5px;
+    }
+
+    .company-summary {
+        margin-left: 20px;
+        .work-length {
+            font-size: 14px;
+        }
+
+    }
+}

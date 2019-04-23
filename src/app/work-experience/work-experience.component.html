@@ -1,7 +1,58 @@
 <section class="section">
   <div class="section-inner">
     <h2 class="heading">Work Experience</h2>
-    <div class="content">
+    <div class="content" *ngFor="let job of jobs">
+
+      <div class="company-details">
+        <img [src]="job.image" alt="" class="company-logo">
+        <div class="company-summary">
+          <div><strong>{{job.companyName}}</strong></div>
+          <div class="work-length" [hidden]="job.positions.length == 1">{{job.duration() }}</div>
+        </div>
+      </div>
+
+      <div class="job" *ngFor="let position of job.positions; let last = last;">
+        <div class="job-separator" *ngIf="job.positions.length > 1">
+          <span class="dot"></span>
+          <span class="line" *ngIf="!last"></span>
+        </div>
+        <div style="margin-bottom: 20px;" [style.margin-left]="job.positions.length > 1 ? '-8px' : '0px'">
+          <strong class="job-title">{{position.title}}</strong>
+          <div class="timeline">
+            <span *ngIf="position.endDate != null">
+              {{position.startDate | date: 'MMMM yyyy'}} - {{position.endDate | date: 'MMMM yyyy'}}
+            </span>
+            <span *ngIf="position.endDate == null">
+              {{position.startDate | date: 'MMMM yyyy'}} - Present
+            </span>
+            <span style="margin: 0 5px;">&#183;</span>
+            <span>{{position.duration() }}</span>
+          </div>
+          <div class="location">{{position.location}}</div>
+          <ul class="job-duties">
+            <li *ngFor="let duty of position.duties">{{duty}}</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+
+
+
+      <!-- 
+
+  
+
+   
+
+
+
+
+ 
+
+
+
+
+      <hr>
 
       <div class="item">
         <h3 class="title">
@@ -15,6 +66,34 @@
           <li>Improved site performance by adding pagination to all existing data tables</li>
           <li>Implemented page where supervisors in application can view their direct reports in a tree view</li>
           <li>Leveraged knowledge: Angular JS, Java (spring), AWS, PostgreSQL</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3 class="title">
+          Jr. Software Developer -
+          <span class="place">
+            <a href="https://torchlms.com/" target="_blank">Torch LMS</a>
+          </span>
+          <span class="year"> (Aug 2016 - Oct 2017)</span>
+        </h3>
+        <ul>
+          <li>Reduced app latency by optimizing SQL queries</li>
+          <li>Utilized AWS to roll code to our UAT environment 2x/day</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <h3 class="title">
+          Technical Project Manager -
+          <span class="place">
+            <a href="https://torchlms.com/" target="_blank">Torch LMS</a>
+          </span>
+          <span class="year"> (Dec 2015 - Apr 2017)</span>
+        </h3>
+        <ul>
+          <li>Reduced support tickets by 84% by establishing and regularly updating a well-optimized knowledge base</li>
+          <li>Revitalized QA process by building out automated daily endpoint testing on our entire application</li>
         </ul>
       </div>
 
@@ -49,33 +128,7 @@
         </ul>
       </div>
 
-      <div class="item">
-        <h3 class="title">
-          Jr. Software Developer -
-          <span class="place">
-            <a href="https://torchlms.com/" target="_blank">Torch LMS</a>
-          </span>
-          <span class="year"> (Aug 2016 - Oct 2017)</span>
-        </h3>
-        <ul>
-          <li>Reduced app latency by optimizing SQL queries</li>
-          <li>Utilized AWS to roll code to our UAT environment 2x/day</li>
-        </ul>
-      </div>
 
-      <div class="item">
-        <h3 class="title">
-          Technical Project Manager -
-          <span class="place">
-            <a href="https://torchlms.com/" target="_blank">Torch LMS</a>
-          </span>
-          <span class="year"> (Dec 2015 - Apr 2017)</span>
-        </h3>
-        <ul>
-          <li>Reduced support tickets by 84% by establishing and regularly updating a well-optimized knowledge base</li>
-          <li>Revitalized QA process by building out automated daily endpoint testing on our entire application</li>
-        </ul>
-      </div>
 
       <div class="item">
         <h3 class="title">
@@ -89,7 +142,7 @@
           <li>Consistently recognized for highest number of tickets resolved on team</li>
           <li>Troubleshoot all aspects of computer issues using a ticketing system</li>
         </ul>
-      </div>
+      </div> -->
 
     </div>
   </div>
