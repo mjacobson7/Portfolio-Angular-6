@@ -25,7 +25,7 @@ export class WorkExperienceComponent implements OnInit {
         image: '../../assets/awardco.jpeg',
         positions: [
           {
-            title: 'Front-End Developer',
+            title: 'Front-End Engineer',
             startDate: new Date(1554098400000),
             endDate: null,
             duration: function () {
