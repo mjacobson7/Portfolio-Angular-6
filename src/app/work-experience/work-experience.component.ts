@@ -33,9 +33,9 @@ export class WorkExperienceComponent implements OnInit {
             },
             location: 'Orem, Utah',
             duties: [
+              'Restructured entire front-end codebase to be WCAG 2.0 Compliant',
+              'Introduced VueJS to replace aging JQuery code',
               'Own the front-end architecture for the Awardco platform',
-              'Control the integration of modern Javascript frameworks and libraries with code base',
-              'Fine-tune the front-end experience and code to hit accessibility standards'
             ]
           }
         ]
@@ -80,7 +80,7 @@ export class WorkExperienceComponent implements OnInit {
           {
             title: 'QA Tester',
             startDate: new Date(1448953200000),
-            endDate: new Date(1491026400000),
+            endDate: new Date(1470031200000),
             duration: function () {
               return that.checkJobDuration(this.startDate, this.endDate);
             },
@@ -93,16 +93,16 @@ export class WorkExperienceComponent implements OnInit {
         ]
       },
       {
-        companyName: 'Cooper Technology',
+        companyName: 'Cooper Equipment Inc.',
         startDate: new Date(),
         endDate: new Date(),
         duration: function () {
           return that.checkJobDuration(this.startDate, this.endDate);
         },
-        image: '../../assets/cooperTechnologyLogo.png',
+        image: '../../assets/cooperEquipmentLogo.png',
         positions: [
           {
-            title: 'Front-End Developer (contract)',
+            title: 'Front-End Engineer · Contract',
             startDate: new Date(1533103200000),
             endDate: null,
             duration: function () {
@@ -112,6 +112,7 @@ export class WorkExperienceComponent implements OnInit {
             duties: [
               'Planned and executed a process where farmers can view the status of their agricultural equipment in real time',
               'Developed Android/Ios App using Ionic (v4) to allow farmers to scan the tags of their cattle to keep track of their health',
+              'Rewrote existing front-end application from scratch to utilize the newest technologies',
               'Leveraged knowledge: Angular (2+), PixiJS'
             ]
           }
@@ -127,7 +128,7 @@ export class WorkExperienceComponent implements OnInit {
         image: '../../assets/skillampLogo.png',
         positions: [
           {
-            title: 'Software Engineer (contract)',
+            title: 'Software Engineer · Contract',
             startDate: new Date(1506837600000),
             endDate: new Date(1541052000000),
             duration: function () {
